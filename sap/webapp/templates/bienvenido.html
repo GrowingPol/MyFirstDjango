@@ -11,7 +11,12 @@
 <div>Personas: {{personas}}
     <ul>
         {%for persona in personas%}
-            <li>Persona {{persona.id}}: {{persona.nombre}} {{persona.apellido}} {{persona.email}}</li>
+            <li>Persona {{persona.id}}:
+                {{persona.nombre}}
+                {{persona.apellido}}
+                {{persona.email}}
+                <a href="detalle_persona/{{persona.id}}">Ver Detalle</a>
+            </li>
         {%endfor%}
     </ul>
 </div>
