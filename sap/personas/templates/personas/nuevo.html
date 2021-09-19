@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Persona</title>
+    <h1>AGREGAR PERSONA</h1>
+</head>
+<body>
+    <div>
+      <form method="POST">
+          <table>
+              {{formaPersona}}
+          </table>
+          <button type="submit">Agregar</button>
+          {% csrf_token %}
+          <div> </div>
+      </form>
+    </div>
+    <div>
+        <div>s </div>
+        <a href="{%url 'index'%}">Volver</a>
+    </div>
+</body>
+</html>

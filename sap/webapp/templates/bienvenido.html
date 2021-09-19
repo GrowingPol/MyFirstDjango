@@ -8,7 +8,8 @@
 <body>
 <!--&lt;!&ndash;Para acceder a parametros de view, colocar valor entre dos corchetes&ndash;&gt;-->
 <div>Numero de Personas: {{no_personas}}</div>
-<div>Personas: {{personas}}
+<div>
+    <a href="nueva_persona">Agregar Persona</a>
     <ul>
         {%for persona in personas%}
             <li>Persona {{persona.id}}:
