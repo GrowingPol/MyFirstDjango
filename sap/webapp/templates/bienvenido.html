@@ -8,6 +8,12 @@
 <body>
 <!--&lt;!&ndash;Para acceder a parametros de view, colocar valor entre dos corchetes&ndash;&gt;-->
 <div>Numero de Personas: {{no_personas}}</div>
-<!--<div>{{msg2}}</div>-->
+<div>Personas: {{personas}}
+    <ul>
+        {%for persona in personas%}
+            <li>Persona {{persona.id}}: {{persona.nombre}} {{persona.apellido}} {{persona.email}}</li>
+        {%endfor%}
+    </ul>
+</div>
 </body>
 </html>
