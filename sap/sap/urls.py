@@ -20,6 +20,6 @@ from webapp.views import bienvenido,despedirse
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('bienvenido/',bienvenido),
+    path('',bienvenido),
     path('despedida',despedirse)
 ]

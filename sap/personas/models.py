@@ -18,5 +18,5 @@ class Persona(models.Model):
     domicilio = models.ForeignKey(Domicilio,on_delete=models.SET_NULL,null=True)
 
     def __str__(self):
-        return f"Persona {self.id}, {self.nombre} {self.apellido} {self.email}"
+        return f"Persona {self.id}, {self.nombre} {self.apellido} {self.email} {self.domicilio}"
 
